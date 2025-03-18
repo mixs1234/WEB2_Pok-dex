@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WEB2_Pok-dex/static/css/main.9f5b86f8.css",
+    "main.js": "/WEB2_Pok-dex/static/js/main.dc2e9488.js",
+    "index.html": "/WEB2_Pok-dex/index.html",
+    "main.9f5b86f8.css.map": "/WEB2_Pok-dex/static/css/main.9f5b86f8.css.map",
+    "main.dc2e9488.js.map": "/WEB2_Pok-dex/static/js/main.dc2e9488.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f5b86f8.css",
+    "static/js/main.dc2e9488.js"
+  ]
+}

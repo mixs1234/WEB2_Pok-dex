@@ -32,11 +32,13 @@ function PokemonCardPage({ }) {
             {/* Container for better width control */}
             <div className="max-w-7xl mx-auto">
                 {/* Search Field Section */}
+                {/*}
                 <div className="mb-8">
                     <PokemonSearchField
                         className="w-full mx-auto bg-slate-600 rounded-md shadow-md"
                     />
                 </div>
+                */}
 
                 {/* Pokemon Cards Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -60,7 +62,8 @@ function PokemonCardPage({ }) {
                         disabled={range.from === 1}
                         bgColor="#ff7373"
                     >
-                        <p className='text-black font-semibold text-lg'>
+                        <p className="text-white font-extrabold text-sm tracking-widest uppercase drop-shadow-lg 
+                                                rounded-full border-4 bg-black p-1">
                             Prévious
                         </p>
                     </PokeButton>
@@ -68,7 +71,8 @@ function PokemonCardPage({ }) {
                         onClick={() => setRange({ from: range.from + jump, to: range.to + jump })}
                         bgColor="#ff7373"
                     >
-                        <p className='text-black font-semibold text-lg'>
+                        <p className="text-white font-extrabold text-sm tracking-widest uppercase drop-shadow-lg 
+                                                rounded-full border-4 bg-black p-1">
                             Néxt
                         </p>
                     </PokeButton>

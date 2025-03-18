@@ -101,26 +101,28 @@ function PokemonDetailPage() {
                             </h1>
                             <p className="text-md text-gray-700">Types: {pokemon.types.join(' / ')}</p>
                         </div>
-                        <img
-                            src={pokemon.sprite}
-                            alt={pokemon.name}
-                            className="w-40 h-40 object-contain transform hover:scale-110 transition-transform duration-300"
-                        />
-                        <img
-                            src={pokemon.sprite_back}
-                            alt={pokemon.name}
-                            className="w-40 h-40 object-contain transform hover:scale-110 transition-transform duration-300"
-                        />
-                        <img
-                            src={pokemon.shiny_sprite}
-                            alt={pokemon.name}
-                            className="w-40 h-40 object-contain transform hover:scale-110 transition-transform duration-300"
-                        />
-                        <img
-                            src={pokemon.shiny_sprite_back}
-                            alt={pokemon.name}
-                            className="w-40 h-40 object-contain transform hover:scale-110 transition-transform duration-300"
-                        />
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <img
+                                src={pokemon.sprite}
+                                alt={pokemon.name}
+                                className="w-full max-w-xs h-auto object-contain transform hover:scale-110 transition-transform duration-300"
+                            />
+                            <img
+                                src={pokemon.sprite_back}
+                                alt={pokemon.name}
+                                className="w-full max-w-xs h-auto object-contain transform hover:scale-110 transition-transform duration-300"
+                            />
+                            <img
+                                src={pokemon.shiny_sprite}
+                                alt={pokemon.name}
+                                className="w-full max-w-xs h-auto object-contain transform hover:scale-110 transition-transform duration-300"
+                            />
+                            <img
+                                src={pokemon.shiny_sprite_back}
+                                alt={pokemon.name}
+                                className="w-full max-w-xs h-auto object-contain transform hover:scale-110 transition-transform duration-300"
+                            />
+                        </div>
                     </div>
 
                     {/* Stats and Info */}
@@ -178,7 +180,7 @@ function PokemonDetailPage() {
                     )}
 
                     {/* Navigation */}
-                    <Link to="/">
+                    <Link to="/WEB2_Pok-dex">
                         <div className="mt-8 flex justify-center">
                             <PokeButton bgColor="#ff7373" onClick={() => { }}>
                                 <p className="text-white font-extrabold text-sm tracking-widest uppercase drop-shadow-lg 

@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import PokemonListPage from './pages/PokemonListPage';
 import PokemonDetailPage from './pages/PokemonDetailPage';
 
 function App() {
+  const baseurl = '/WEB2_Pok-dex';
 
   return (
     <Router>
@@ -13,8 +14,9 @@ function App() {
         </nav>
         <div className="bg-white p-6 rounded-lg shadow-lg w-full">
           <Routes>
-            <Route path="/" element={<PokemonListPage />} />
-            <Route path="/pokemon/:id" element={<PokemonDetailPage />} />
+            <Route path="/" element={<Navigate to={baseurl} replace />} />
+            <Route path={baseurl} element={<PokemonListPage />} />
+            <Route path={`${baseurl}/pokemon/:id`} element={<PokemonDetailPage />} />
           </Routes>
         </div>
       </div>

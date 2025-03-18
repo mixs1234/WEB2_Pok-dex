@@ -24,7 +24,7 @@ export function PokemonCard({ pokemon, isLoading = false, className = '' }) {
     const { id, name, sprite, type } = pokemon;
 
     return (
-        <Link to={`/pokemon/${id}`} className={`block ${className}`}>
+        <Link to={`/WEB2_Pok-dex/pokemon/${id}`} className={`block ${className}`}>
             <div
                 className={`p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ${getPokemonTypeColor(type)}`}
             >

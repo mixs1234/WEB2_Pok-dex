@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WEB2_Pok-dex/static/css/main.9f5b86f8.css",
-    "main.js": "/WEB2_Pok-dex/static/js/main.183b2c6f.js",
+    "main.js": "/WEB2_Pok-dex/static/js/main.4cf3db47.js",
     "index.html": "/WEB2_Pok-dex/index.html",
     "main.9f5b86f8.css.map": "/WEB2_Pok-dex/static/css/main.9f5b86f8.css.map",
-    "main.183b2c6f.js.map": "/WEB2_Pok-dex/static/js/main.183b2c6f.js.map"
+    "main.4cf3db47.js.map": "/WEB2_Pok-dex/static/js/main.4cf3db47.js.map"
   },
   "entrypoints": [
     "static/css/main.9f5b86f8.css",
-    "static/js/main.183b2c6f.js"
+    "static/js/main.4cf3db47.js"
   ]
 }
